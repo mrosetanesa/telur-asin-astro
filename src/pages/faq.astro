@@ -1,0 +1,390 @@
+---
+const title = "FAQ | Telur Asin Rose";
+const description = "Find answers to common questions about our artisanal salted eggs, shipping, bulk orders, and partnership opportunities.";
+---
+
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>{title}</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#faf9f5",
+                        "surface-container-highest": "#e3e2de",
+                        "primary-fixed": "#ceeac5",
+                        "secondary-container": "#fecddd",
+                        "error": "#ba1a1a",
+                        "outline": "#747970",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#b3ceab",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-tint": "#4c6548",
+                        "surface-container-low": "#f5f4ef",
+                        "on-tertiary-container": "#66404d",
+                        "tertiary-fixed-dim": "#ecb9c9",
+                        "tertiary": "#7b5361",
+                        "primary-container": "#a8c3a0",
+                        "on-primary-fixed": "#0a2009",
+                        "on-surface": "#1b1c19",
+                        "on-primary-fixed-variant": "#354d31",
+                        "surface-container-high": "#e9e8e4",
+                        "surface-variant": "#e3e2de",
+                        "on-tertiary-fixed": "#30121e",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#30312e",
+                        "on-secondary-container": "#7a5562",
+                        "on-primary-container": "#3a5135",
+                        "inverse-primary": "#b3ceab",
+                        "surface": "#faf9f5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#2e131e",
+                        "primary": "#4c6548",
+                        "on-background": "#1b1c19",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c8be",
+                        "surface-bright": "#faf9f5",
+                        "on-tertiary-fixed-variant": "#613c49",
+                        "tertiary-container": "#e0aebe",
+                        "tertiary-fixed": "#ffd9e4",
+                        "surface-container": "#efeee9",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dbdad6",
+                        "on-surface-variant": "#434841",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#e9baca",
+                        "secondary-fixed": "#ffd9e5",
+                        "secondary": "#795462",
+                        "on-secondary-fixed-variant": "#5f3d4a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "section-gap": "80px",
+                        "margin-desktop": "40px",
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Poppins"],
+                        "display-lg": ["Poppins"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Poppins"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            padding-bottom: 24px;
+        }
+        .accordion-item.active .chevron-icon {
+            transform: rotate(180deg);
+        }
+        .frosted-glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 frosted-glass shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-semibold text-primary">Telur Asin Rose</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="/">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="/products">Products</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="/about">About</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="/faq">FAQ</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="/contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md hover:opacity-90 transition-opacity">
+                    <a href="/cart" class="text-on-primary">Buy Now</a>
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Search Section -->
+<section class="pt-40 pb-20 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute top-0 right-0 -z-10 w-1/3 h-full opacity-10">
+<!-- Decorative floral-like shape (CSS Pattern) -->
+<div class="w-full h-full bg-primary-container rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-3xl mx-auto text-center space-y-8">
+<h1 class="font-display-lg text-display-lg text-on-surface">How can we help you?</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Find answers to common questions about our artisanal salted eggs, shipping, and partnership opportunities.</p>
+<div class="relative max-w-xl mx-auto group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">search</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-primary shadow-sm text-body-md transition-all outline-none" placeholder="Search for questions..." type="text"/>
+</div>
+</div>
+</section>
+<!-- FAQ Categories & Accordions -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap grid grid-cols-1 lg:grid-cols-4 gap-gutter">
+<!-- Sidebar Navigation (Desktop) -->
+<aside class="hidden lg:block space-y-4 sticky top-32 h-fit">
+<h3 class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-6">Categories</h3>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 p-3 rounded-lg bg-primary-container text-on-primary-container font-label-md" href="#product-info">
+<span class="material-symbols-outlined" data-icon="egg">egg</span>
+                    Product Info
+                </a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant font-label-md" href="#shipping">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+                    Shipping
+                </a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant font-label-md" href="#bulk-orders">
+<span class="material-symbols-outlined" data-icon="package_2">package_2</span>
+                    Bulk Orders
+                </a>
+<a class="flex items-center gap-3 p-3 rounded-lg hover:bg-surface-container transition-colors text-on-surface-variant font-label-md" href="#resellers">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+                    Resellers
+                </a>
+</nav>
+</aside>
+<!-- Accordion Content -->
+<div class="lg:col-span-3 space-y-12">
+<!-- Product Info -->
+<section class="scroll-mt-32" id="product-info">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="egg">egg</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg">Product Info</h2>
+</div>
+<div class="space-y-4">
+<div class="accordion-item bg-surface-container-lowest rounded-xl border border-outline-variant transition-all hover:shadow-md overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleAccordion(this)">
+<span class="font-label-md text-label-md text-on-surface font-semibold">What makes Telur Asin Rose special?</span>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6 text-on-surface-variant">
+                            Our eggs are sourced from local free-range ducks and cured using a traditional 21-day secret process. This results in a perfectly oily, bright orange yolk with a creamy texture that is lower in sodium than industrial alternatives.
+                        </div>
+</div>
+<div class="accordion-item bg-surface-container-lowest rounded-xl border border-outline-variant transition-all hover:shadow-md overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleAccordion(this)">
+<span class="font-label-md text-label-md text-on-surface font-semibold">How long can I store the eggs?</span>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6 text-on-surface-variant">
+                            Telur Asin Rose can be kept at room temperature for up to 14 days and in the refrigerator for up to 1 month. We recommend keeping them away from direct sunlight for optimal freshness.
+                        </div>
+</div>
+</div>
+</section>
+<!-- Shipping -->
+<section class="scroll-mt-32" id="shipping">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg">Shipping</h2>
+</div>
+<div class="space-y-4">
+<div class="accordion-item bg-surface-container-lowest rounded-xl border border-outline-variant transition-all hover:shadow-md overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleAccordion(this)">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Do you ship nationwide?</span>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6 text-on-surface-variant">
+                            Yes, we ship all across Indonesia. We use extra protective honeycomb padding and sturdy cardboard boxes to ensure your eggs arrive perfectly intact.
+                        </div>
+</div>
+<div class="accordion-item bg-surface-container-lowest rounded-xl border border-outline-variant transition-all hover:shadow-md overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleAccordion(this)">
+<span class="font-label-md text-label-md text-on-surface font-semibold">What is the delivery timeline?</span>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6 text-on-surface-variant">
+                            Orders placed before 2 PM are processed the same day. Shipping usually takes 1-2 days for major cities and up to 4 days for remote areas.
+                        </div>
+</div>
+</div>
+</section>
+<!-- Bulk Orders -->
+<section class="scroll-mt-32" id="bulk-orders">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined" data-icon="package_2">package_2</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg">Bulk Orders</h2>
+</div>
+<div class="space-y-4">
+<div class="accordion-item bg-surface-container-lowest rounded-xl border border-outline-variant transition-all hover:shadow-md overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleAccordion(this)">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Is there a discount for events?</span>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6 text-on-surface-variant">
+                            Absolutely! We offer special pricing for orders of 100 eggs or more. Perfect for weddings, catering, or corporate hampers. Please reach out via WhatsApp for a custom quote.
+                        </div>
+</div>
+</div>
+</section>
+<!-- Resellers -->
+<section class="scroll-mt-32" id="resellers">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed-dim flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg">Resellers</h2>
+</div>
+<div class="space-y-4">
+<div class="accordion-item bg-surface-container-lowest rounded-xl border border-outline-variant transition-all hover:shadow-md overflow-hidden">
+<button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleAccordion(this)">
+<span class="font-label-md text-label-md text-on-surface font-semibold">How do I become a partner?</span>
+<span class="material-symbols-outlined chevron-icon transition-transform duration-300">expand_more</span>
+</button>
+<div class="accordion-content px-6 text-on-surface-variant">
+                            We are always looking for passionate partners. To apply, fill out the form in our 'Contact' section with 'Reseller Inquiry' in the subject line. We provide marketing support and competitive margins.
+                        </div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Contact CTA Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+<div class="bg-primary text-on-primary rounded-3xl p-12 text-center space-y-6 shadow-xl relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-on-primary rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary-container rounded-full blur-3xl"></div>
+</div>
+<h2 class="font-headline-lg text-headline-lg">Still have questions?</h2>
+<p class="font-body-lg text-body-lg max-w-xl mx-auto opacity-90">Our team is happy to help with any specific inquiries about our process, shipping, or custom orders.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-label-md flex items-center gap-2 hover:scale-105 transition-transform" href="https://wa.me/yournumber">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                    Chat with us
+                </a>
+<a class="border border-on-primary/30 text-on-primary px-8 py-4 rounded-xl font-label-md hover:bg-on-primary/10 transition-colors" href="/contact">
+                    Email Support
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md font-semibold text-on-primary">Telur Asin Rose</div>
+<p class="font-body-md text-body-md opacity-80">Premium Artisanal Salted Eggs. Traditionally cured, modernly curated.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest opacity-60">Shop</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-label-md text-label-md opacity-80 hover:text-secondary-container transition-colors" href="/products">Products</a>
+<a class="font-label-md text-label-md opacity-80 hover:text-secondary-container transition-colors" href="/products">Bulk Orders</a>
+<a class="font-label-md text-label-md opacity-80 hover:text-secondary-container transition-colors" href="/products">Gift Hampers</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest opacity-60">Info</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-label-md text-label-md opacity-80 hover:text-secondary-container transition-colors" href="/about">About Us</a>
+<a class="font-label-md text-label-md text-secondary-container font-bold" href="/faq">FAQ</a>
+<a class="font-label-md text-label-md opacity-80 hover:text-secondary-container transition-colors" href="/contact">Shipping Policy</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest opacity-60">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center hover:bg-on-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="brand_instagram">photo_camera</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center hover:bg-on-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</a>
+</div>
+<p class="font-body-md text-body-md opacity-80 pt-4">© 2024 Telur Asin Rose. Made with love.</p>
+</div>
+</div>
+</footer>
+<script>
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all other items in the same section for clarity
+            const section = item.closest('section');
+            const items = section.querySelectorAll('.accordion-item');
+            items.forEach(el => el.classList.remove('active'));
+            
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        // Active Link Highlighting logic for sidebar
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('aside nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('bg-primary-container', 'text-on-primary-container');
+                link.classList.add('hover:bg-surface-container', 'text-on-surface-variant');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('bg-primary-container', 'text-on-primary-container');
+                    link.classList.remove('hover:bg-surface-container', 'text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
